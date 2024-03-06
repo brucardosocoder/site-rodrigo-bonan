@@ -1,0 +1,377 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    height: 350px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.video-background {
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.artist-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 120px;
+    color: rgb(63, 69, 83);
+    text-shadow: 5px 5px 5px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(18, 170, 207);
+    border-radius: 0px 0 15px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: rgb(0, 255, 13);
+}
+
+.main {
+    background-image: url('imagens/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0 20px 0;
+}
+
+.main-div {        
+    background-color: rgba(108, 189, 125, 0.815);
+    width: 70%;
+    margin: auto;
+    border-radius: 20px 0 20px 0;
+    padding: 30px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    border-radius: 20px 0 20px 0;
+}
+
+.carousel {
+    display: flex;
+    width: 1800px; /* 6 images * 300px width */
+    animation: scroll 15s linear infinite;
+}
+
+.carousel-slide {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    padding: 0 5px 0 5px;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    margin: 30px auto 30px auto;
+    width: 70%;
+    height: fit-content;
+    border-radius: 20px 0 20px 0;    
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+.content p {
+    text-align: justify;
+    font-size: 25px;
+    color: black;
+    padding: 10px 5px 10px 10px;
+    margin: auto;
+}
+
+.content img {
+    height: 520px;
+    margin: auto;
+    border-radius: 20px 0 20px 0;
+    max-height: 100%;
+    padding: 10px 10px 10px 5px;
+}
+
+.youtube-carousel-slide {    
+    width: 640px;
+    height: 360px;
+    object-fit: cover;
+    border: none;
+    padding: 0 5px 0 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-900px); /* 5 images * 300px width */
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+.contact-info,
+.social-media,
+.contact-form {
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(18, 170, 207);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px 0 10px 0;
+}
+
+.contact-form button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px 0 10px 0;
+}
+
+.contact-form button:hover {
+    background-color: #007acc;
+}
+
+
+
+@media (max-width: 1024px) {
+  
+    
+  
+ 
+  }
+    
+    @media (max-width: 480px) {
+
+        .header {
+            height: 135px;
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .video-background {
+            border-radius: 20px 0 20px 0;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 50%;
+        }
+        
+        .artist-name {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(63, 69, 83);
+            text-shadow: 5px 5px 5px white;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .main-div {
+            display: flex;
+            flex-wrap: wrap;      
+            background-color: rgba(108, 189, 125, 0.815);
+            width: 75%;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            max-width: 100%;
+            margin: auto;
+            border-radius: 20px 0 20px 0;
+        }
+        
+        .carousel {
+            display: flex;
+            width: 900px; /* 6 images * 150px width */
+            animation: scroll 15s linear infinite;
+        }
+        
+        .carousel-slide {
+            width: 150px;
+            height: 125px;
+            object-fit: cover;
+            padding: 0 5px 0 5px;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            margin: 30px auto 30px auto;
+            width: 100%;
+            height: fit-content;
+            border-radius: 20px 0 20px 0;    
+            background-color: rgba(255, 255, 255, 0.603);
+        }
+        
+        .content p {
+            text-align: justify;
+            font-size: 15px;
+            color: black;
+            padding: 10px 5px 10px 10px;
+            margin: auto;
+        }
+        
+        .content img {
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            border-radius: 20px 0 20px 0;
+            padding: 10px 10px 10px 10px;
+        }
+        
+        .youtube-carousel-slide {    
+            width: 320px;
+            height: 180px;
+            object-fit: cover;
+            border: none;
+            padding: 0 5px 0 5px;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-900px); /* 5 images * 300px width */
+            }
+        }
+    
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px 0 20px 0;
+        }
+        
+        .footer h2 {
+            font-size: 15px;
+        }
+        
+        .contact-info,
+        .social-media,
+        .contact-form {
+            margin: 20px;
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            color: rgb(18, 170, 207);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 90%;
+            height: 10px;
+            padding: 10px 0;
+            margin: 10px auto 10px auto;
+            border: none;
+            background-color: white;
+            color: black;
+            border-radius: 10px 0 10px 0;
+            font-size: 14px;
+        }
+        
+        .contact-form button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px 0 10px 0;
+        }
+        
+        .contact-form button:hover {
+            background-color: #007acc;
+        } 
+    }
+  
+  
